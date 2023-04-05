@@ -26,9 +26,11 @@ const Filter = (props) => {
       }
     });
   }
+
   return (
     <div>
       <div className="filter-container" >
+
         <input type="radio" name="filter" value="Gender" onClick={() => setFilter("Gender")} />
         <label htmlFor="Gender">Gender</label>
 
@@ -40,27 +42,33 @@ const Filter = (props) => {
 
         <input type="radio" name="filter" value="Reset" onClick={() => setFilter("/")} />
         <label htmlFor="Disable">Reset</label>
+
       </div>
 
       <div className="filter-selector">
+
         {(filter === "Gender") && (
           <select name="Gender" onChange={(e) => setFilterParams(e.target.value)} >
             <option value="selected" selected>Please Select Gender...</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
+          
         )}
 
         {(filter === 'Location') && (
+
           <select name="Location" onChange={(e) => setFilterParams(e.target.value)} >
             <option value="selected" selected>Please Select City..</option>
             <option value="Bangalore">Bangalore</option>
             <option value="Chennai">Chennai</option>
             <option value="Hyderabad">Hyderabad</option>
           </select>
+
         )}
 
         {(filter === 'Date') && (
+          
           <input type="date" name="filter-date" onChange={(e) => {
             let date = e.target.value;
             let newDate = new Date(date).toDateString();
@@ -73,6 +81,7 @@ const Filter = (props) => {
           }} />
         )}
 
+
         {(filter !== "/") && (<button onClick={() => {
           filterData(filter, filterParams);
         }}>click to filter</button>)}
@@ -80,6 +89,7 @@ const Filter = (props) => {
         {(filter === "/") && (
           <button onClick={filterReset}>Reset</button>
         )}
+        
       </div>
 
 
