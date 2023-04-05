@@ -1,0 +1,39 @@
+.navbar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    width:100vw;
+    background-color: rgb(5, 5, 150);
+}
+
+.logo img{
+    padding-left: 10px;
+    padding-top: 5px;
+    height:25px
+}
+
+.display-count{
+    display: flex;
+    width:10%;
+    justify-content: space-evenly;
+}
+
+.display-count div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:35px;
+    width:35px;
+}
+
+.female-count{
+    background-color: red;
+    color:white;
+}
+
+.male-count{
+    background-color: green;
+    color:white;
+}

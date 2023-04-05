@@ -1,0 +1,176 @@
+.home-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height:100%;
+}
+
+.home-side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 3%;
+    height: 92vh;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(72, 189, 236);
+}
+
+.home-side-nav img {
+    width: 20px;
+    padding: 15px 0;
+    cursor: pointer;
+
+}
+
+/* There is middle one's css */
+
+.home-middle {
+    width: 68%;
+    border: 1px solid black;
+    height: 92vh;
+    overflow: scroll;
+}
+
+.detail-container {
+    width: 25%
+}
+
+.candidate-heading {
+    margin-bottom: 50px;
+}
+
+
+.candidate-detail {
+    margin-bottom: 50px
+}
+
+.candidate-detail p {
+    margin: 0%;
+}
+
+
+.candidate-image img {
+    width: 300px;
+}
+
+
+/* Above is middle one's css */
+
+/* below is home-left-content */
+
+.home-left-content {
+    width: 29%;
+    /* text-align: center; */
+    border: 1px solid black;
+    height: 92vh;
+    box-sizing: border-box;
+}
+
+
+.events {
+    padding: 0;
+    margin: 0;
+    height: 99%;
+    /* 604px; */
+    width: 97%;
+    /* 355px; */
+    border: 5px solid rgb(165, 163, 163);
+    overflow: scroll;
+}
+
+
+.title-below-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 50px;
+}
+
+
+.event-data {
+    box-sizing: border-box;
+    width: 90%;
+    background-color: rgb(181, 181, 181);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.event-data:hover {
+    background-color: rgb(131, 130, 130);
+}
+
+.event-data-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.event-upper img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.filter-options {
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 9%;
+    display:none;
+}
+
+.filter-options.active{
+    display: block;
+    background-color: rgb(209, 209, 209);
+    color:black;
+}
+
+.filter-options .filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-options .filter-selector {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.filter-options .filter-selector button {
+    display: inline-block;
+    background-color: rgb(36, 145, 188);
+    color: #ffffff;
+    text-align: center;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.filter-options .filter-selector button:hover{
+    background-color: rgb(59, 175, 221);
+}
+
+/* Above is home-left-content */
+
+.active {
+    background-color: rgb(131, 130, 130);
+    color:#ffffff;
+}
